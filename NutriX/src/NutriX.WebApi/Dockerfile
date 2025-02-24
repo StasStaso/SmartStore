@@ -12,10 +12,10 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["src/NutriX.WebApi/NutriX.WebApi/NutriX.WebApi.csproj", "src/NutriX.WebApi/NutriX.WebApi/"]
-RUN dotnet restore "./src/NutriX.WebApi/NutriX.WebApi/NutriX.WebApi.csproj"
+COPY ["src/NutriX.WebApi/NutriX.WebApi.csproj", "src/NutriX.WebApi/"]
+RUN dotnet restore "./src/NutriX.WebApi/NutriX.WebApi.csproj"
 COPY . .
-WORKDIR "/src/src/NutriX.WebApi/NutriX.WebApi"
+WORKDIR "/src/src/NutriX.WebApi"
 RUN dotnet build "./NutriX.WebApi.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # This stage is used to publish the service project to be copied to the final stage

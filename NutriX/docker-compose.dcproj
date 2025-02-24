@@ -4,7 +4,7 @@
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
     <DockerPublishLocally>False</DockerPublishLocally>
-    <ProjectGuid>5ab0ab7d-5a21-4e49-8f0b-4a5851abff13</ProjectGuid>
+    <ProjectGuid>744fa54c-bf28-450a-bcd8-4ebb2de0f763</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
     <DockerServiceName>nutrix.webapi</DockerServiceName>

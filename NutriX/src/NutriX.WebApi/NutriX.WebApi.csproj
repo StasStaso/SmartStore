@@ -4,10 +4,10 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>ed6825f9-a683-4358-bcf4-2a2b5ea1839e</UserSecretsId>
+    <UserSecretsId>096fcdd6-0309-48fb-94ae-d334d57cfc9a</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <DockerfileContext>..\..\..</DockerfileContext>
-    <DockerComposeProjectPath>..\..\..\docker-compose.dcproj</DockerComposeProjectPath>
+    <DockerfileContext>..\..</DockerfileContext>
+    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,8 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\NutriX.Application\NutriX.Application\NutriX.Application.csproj" />
-    <ProjectReference Include="..\..\NutriX.Infrastructure\NutriX.Infrastructure\NutriX.Infrastructure.csproj" />
+    <ProjectReference Include="..\NutriX.Application\NutriX.Application.csproj" />
+    <ProjectReference Include="..\NutriX.Infrastructure\NutriX.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
