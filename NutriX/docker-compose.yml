@@ -4,3 +4,27 @@ services:
     build:
       context: .
       dockerfile: src/NutriX.WebApi/Dockerfile
+    environment:
+      - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=NutriXDB;Username=root;Password=4?H&6Gsi:33);Include Error Detail=true
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+    depends_on:
+      - postgres
+    restart: always
+
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: NutriXDB
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: 4?H&6Gsi:33)
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  postgres_data:
+    driver: local
