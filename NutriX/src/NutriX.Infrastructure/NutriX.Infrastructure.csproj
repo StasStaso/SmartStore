@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\NutriX.Application\NutriX.Application\NutriX.Application.csproj" />
-    <ProjectReference Include="..\..\NutriX.Core\NutriX.Core\NutriX.Core.csproj" />
+    <ProjectReference Include="..\NutriX.Application\NutriX.Application.csproj" />
+    <ProjectReference Include="..\NutriX.Core\NutriX.Core.csproj" />
   </ItemGroup>
 
 </Project>

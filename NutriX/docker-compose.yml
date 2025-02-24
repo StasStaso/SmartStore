@@ -3,4 +3,4 @@ services:
     image: ${DOCKER_REGISTRY-}nutrixwebapi
     build:
       context: .
-      dockerfile: src/NutriX.WebApi/NutriX.WebApi/Dockerfile
+      dockerfile: src/NutriX.WebApi/Dockerfile
